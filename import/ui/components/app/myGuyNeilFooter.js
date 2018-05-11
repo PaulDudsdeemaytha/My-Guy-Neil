@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import style from './style.js';
 
-class myGuyNeilFooter extends Component {
+class MyGuyNeilFooter extends Component {
 
 };
 
-export default myGuyNeilFooter;
+export default MyGuyNeilFooter;

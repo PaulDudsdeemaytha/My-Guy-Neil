@@ -6,12 +6,12 @@ import { render } from "react-dom";
 import ReactDOM from "react-dom";
 import { Meteor } from "meteor/meteor";
 
-import myGuyNeilApp from "../import/ui/components/app/myGuyNeilApp";
+import MyGuyNeilHome from "../import/ui/components/app/MyGuyNeilHome";
 import styles from "./main.css";
 
 // import "./main.html";
 
-class MyGuyNeilApp extends Component {
+class MyGuyNeil extends Component {
   render() {
     return <h1>Hello World</h1>;
   }
@@ -19,11 +19,11 @@ class MyGuyNeilApp extends Component {
 
 // const MyGuyNeil = withTracker(() => {
 //   return {
-//     MyGuyNeilApp
+//     MyGuyNeilHome
 //   };
 // })(TodoListApp);
 
 Meteor.startup(() => {
-  ReactDOM.render(<MyGuyNeilApp />, document.getElementById("app"));
+  ReactDOM.render(<MyGuyNeil />, document.getElementById("app"));
   console.log("hello");
 });

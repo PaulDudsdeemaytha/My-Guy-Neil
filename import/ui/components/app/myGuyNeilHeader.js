@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import style from './style.js';
 
-class myGuyNeilHeader extends Component {
+class MyGuyNeilHeader extends Component {
   render() {
     return (
       <div style={styles.header}>
@@ -12,11 +12,11 @@ class myGuyNeilHeader extends Component {
   };
 }
 
-myGuyNeilHeader.defaultProps = {
+MyGuyNeilHeader.defaultProps = {
   title: "Test!"
 };
 
-myGuyNeilHeader.propTypes = {
+MyGuyNeilHeader.propTypes = {
   title: PropTypes.string.isRequired
 };
-export default myGuyNeilHeader;
+export default MyGuyNeilHeader;
