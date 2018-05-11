@@ -18,5 +18,8 @@ shell-server@0.3.1            # Server-side component of the `meteor shell` comm
 
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
+<<<<<<< HEAD
 static-html
+=======
+>>>>>>> cc8c6f108454ea24e36ae04785b2e43a571d947a
 react-meteor-data
