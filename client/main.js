@@ -8,12 +8,13 @@ import styles from "./main.css";
 
 class MyGuyNeil extends Component {
   render() {
-    return
-    <div>
-      <h1>My Guy Neil</h1>
-      <MyGuyNeilHome title="My Guy Neil" />
-    </div>
-  }
+    return (
+      <div>
+        <h1>My Guy Neil</h1>
+        <MyGuyNeilHome title="My Guy Neil" />
+      </div>
+    );
+  };
 }
 
 // const MyGuyNeil = withTracker(() => {
