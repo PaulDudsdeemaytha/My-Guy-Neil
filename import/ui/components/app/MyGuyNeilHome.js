@@ -10,8 +10,11 @@ import style from './style.js';
 class MyGuyNeilHome extends Component {
   render() {
     return (
-      <div>
+      <div style={style.home}>
         <h1>Hello</h1>
+        <MyGuyNeilHeader />
+        <MyGuyNeilBody />
+        <MyGuyNeilFooter />
       </div>
     );
   };

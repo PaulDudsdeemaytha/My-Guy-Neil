@@ -7,7 +7,7 @@ import style from './style.js';
 class MyGuyNeilBody extends Component {
   render() {
     return (
-      <div style={styles.body}>
+      <div style={style.body}>
         <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
       </div>
     );

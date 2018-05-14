@@ -5,8 +5,8 @@ import style from './style.js';
 class MyGuyNeilHeader extends Component {
   render() {
     return (
-      <div style={styles.header}>
-        <h1 style={styles.header}>{this.props.title}</h1>
+      <div style={style.header}>
+        <h1 style={style.header}>{this.props.title}</h1>
       </div>
     );
   };

@@ -5,8 +5,8 @@ import style from './style.js';
 class MyGuyNeilFooter extends Component {
   render() {
     return (
-      <div style={styles.footer}>
-        <h1 style={styles.footer}>{this.props.title}</h1>
+      <div style={style.footer}>
+        <h1 style={style.footer}>{this.props.title}</h1>
       </div>
     );
   };
