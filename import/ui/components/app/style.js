@@ -4,6 +4,11 @@ const style = {
 
   },
 
+  body: {
+    color: 'white',
+    fontSize: '7.5rem'
+  },
+
   footer: {
 
   }
