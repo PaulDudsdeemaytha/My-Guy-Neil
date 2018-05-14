@@ -10,13 +10,14 @@ class MyGuyNeilHeader extends Component {
       </div>
     );
   };
-}
-
-MyGuyNeilHeader.defaultProps = {
-  title: "Test!"
 };
 
-MyGuyNeilHeader.propTypes = {
-  title: PropTypes.string.isRequired
-};
+// MyGuyNeilHeader.defaultProps = {
+//   title: "Test!"
+// };
+
+// MyGuyNeilHeader.propTypes = {
+//   title: PropTypes.string.isRequired
+// };
+
 export default MyGuyNeilHeader;

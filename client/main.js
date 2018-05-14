@@ -1,6 +1,3 @@
-// import { Template } from "meteor/templating";
-import { ReactiveVar } from "meteor/reactive-var";
-
 import React, { Component } from "react";
 import { render } from "react-dom";
 import ReactDOM from "react-dom";
@@ -9,11 +6,13 @@ import { Meteor } from "meteor/meteor";
 import MyGuyNeilHome from "../import/ui/components/app/MyGuyNeilHome";
 import styles from "./main.css";
 
-// import "./main.html";
-
 class MyGuyNeil extends Component {
   render() {
-    return <h1>Hello World</h1>;
+    return
+    <div>
+      <h1>My Guy Neil</h1>
+      <MyGuyNeilHome title="My Guy Neil" />
+    </div>
   }
 }
 
@@ -24,6 +23,5 @@ class MyGuyNeil extends Component {
 // })(TodoListApp);
 
 Meteor.startup(() => {
-  ReactDOM.render(<MyGuyNeil />, document.getElementById("app"));
-  console.log("hello");
+  ReactDOM.render(<MyGuyNeil />, document.getElementById('app'));
 });

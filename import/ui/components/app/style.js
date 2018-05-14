@@ -2,6 +2,10 @@ const style = {
 
   header: {
 
+  },
+
+  footer: {
+
   }
 
 };
