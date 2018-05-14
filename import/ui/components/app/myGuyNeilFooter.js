@@ -6,7 +6,6 @@ class MyGuyNeilFooter extends Component {
   render() {
     return (
       <div style={style.footer}>
-        <h1 style={style.footer}>{this.props.title}</h1>
       </div>
     );
   };

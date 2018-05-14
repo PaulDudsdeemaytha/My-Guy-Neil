@@ -11,7 +11,6 @@ class MyGuyNeilHome extends Component {
   render() {
     return (
       <div style={style.home}>
-        <h1>Hello</h1>
         <MyGuyNeilHeader />
         <MyGuyNeilBody />
         <MyGuyNeilFooter />

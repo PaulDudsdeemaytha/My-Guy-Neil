@@ -6,7 +6,7 @@ class MyGuyNeilHeader extends Component {
   render() {
     return (
       <div style={style.header}>
-        <h1 style={style.header}>{this.props.title}</h1>
+        <h1 style={style.header}>My Guy Neil</h1>
       </div>
     );
   };

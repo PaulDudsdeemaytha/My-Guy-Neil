@@ -9,6 +9,9 @@ class MyGuyNeilBody extends Component {
     return (
       <div style={style.body}>
         <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+        {/* <Link to={`/users/${user.name}`}>
+          What's up, {user.name}?
+        </Link> */}
       </div>
     );
   };
