@@ -1,5 +1,4 @@
 const style = {
-
   home: {
     display: 'flex',
     alignItems: 'center',
@@ -7,9 +6,7 @@ const style = {
     flexDirection: 'column'
   },
 
-  header: {
-
-  },
+  header: {},
 
   body: {
     alignSelf: 'center',
@@ -21,10 +18,7 @@ const style = {
     textShadow: '2px 2px #a5a5a5'
   },
 
-  footer: {
-
-  }
-
+  footer: {}
 };
 
 export default style;
