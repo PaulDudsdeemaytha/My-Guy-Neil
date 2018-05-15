@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class LoginContainer extends Component {
   render() {
-    return <div>"Hello!"</div>;
+    return <div>"Hello This is the login page"</div>;
   }
 }
 
