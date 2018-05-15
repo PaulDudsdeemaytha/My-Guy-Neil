@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import createBrowserHistory from "history/createBrowserHistory";
 //importing items for routes
 import Login from "../../containers/Login";
+import MyGuyNeilHome from "../../components/app/MyGuyNeilHome";
 
 // const browserHistory = createBrowserHistory();
 
@@ -21,7 +22,7 @@ if (typeof document !== "undefined") {
 export const renderRoutes = () => (
   <Router history={history}>
     <Switch>
-      <Route exact path="/" component={Login} />
+      <Route exact path="/" component={MyGuyNeilHome} />
       <Route path="/Login" component={Login} />
     </Switch>
   </Router>
