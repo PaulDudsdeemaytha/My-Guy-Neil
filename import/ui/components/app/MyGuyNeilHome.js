@@ -6,7 +6,14 @@ import MyGuyNeilBody from './MyGuyNeilBody';
 import MyGuyNeilFooter from './MyGuyNeilFooter';
 import MyGuyNeilHeader from './MyGuyNeilHeader.js';
 
-class MyGuyNeilHome extends Component {
+import Request from 'superagent';
+
+class MyGuyNeilHome extends React.Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
+
   render() {
     return (
       <div style={style.home}>
@@ -15,7 +22,7 @@ class MyGuyNeilHome extends Component {
         <MyGuyNeilFooter />
       </div>
     );
-  };
-};
+  }
+}
 
 export default MyGuyNeilHome;

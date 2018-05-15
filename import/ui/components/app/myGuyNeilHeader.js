@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import style from "./style";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import style from './style';
 
-class MyGuyNeilHeader extends Component {
+class MyGuyNeilHeader extends React.Component {
   render() {
     return (
       <div style={style.header}>
