@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import style from "./style.js";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import style from './style';
 
 class MyGuyNeilHeader extends Component {
   render() {
@@ -9,15 +9,7 @@ class MyGuyNeilHeader extends Component {
         <h1 style={style.header}>My Guy Neil</h1>
       </div>
     );
-  }
-}
-
-// MyGuyNeilHeader.defaultProps = {
-//   title: "Test!"
-// };
-
-// MyGuyNeilHeader.propTypes = {
-//   title: PropTypes.string.isRequired
-// };
+  };
+};
 
 export default MyGuyNeilHeader;

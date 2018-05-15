@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from "prop-types";
-import Clock from 'react-live-clock';
+import PropTypes from 'prop-types';
+import style from './style';
 
-import style from './style.js';
+import Clock from 'react-live-clock';
 
 class MyGuyNeilBody extends Component {
   render() {
     return (
       <div style={style.body}>
         <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
-        {/* <Link to={`/users/${user.name}`}>
-          What's up, {user.name}?
-        </Link> */}
       </div>
     );
   };
