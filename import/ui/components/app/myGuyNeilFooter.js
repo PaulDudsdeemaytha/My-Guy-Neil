@@ -16,24 +16,24 @@ class MyGuyNeilFooter extends React.Component {
 
   render() {
     return !this.props.isGeolocationAvailable ? (
-      <div>Your browser does not support Geolocation</div>
+      <div style={style.footer}>Geolocation is not supported.</div>
     ) : !this.props.isGeolocationEnabled ? (
-      <div>Geolocation is not enabled</div>
+      <div style={style.footer}>Geolocation is not enabled.</div>
     ) : this.props.coords ? (
-      <table>
+      <table style={style.footer}>
         <tbody>
           <tr>
-            <td>latitude</td>
+            <td>Latitude</td>
             <td>{this.props.coords.latitude}</td>
           </tr>
           <tr>
-            <td>longitude</td>
+            <td>Longitude</td>
             <td>{this.props.coords.longitude}</td>
           </tr>
         </tbody>
       </table>
     ) : (
-      <div>Getting the location data&hellip; </div>
+      <div style={style.footer}>Retrieving location data...&hellip;</div>
     );
   }
 }

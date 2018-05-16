@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Route, Redirect } from "react-router";
+import React, { Component } from 'react';
+import { Route, Redirect } from 'react-router';
 
 // import { renderRoutes } from "../../startup/routes";
 
@@ -7,16 +7,16 @@ class LoginContainer extends Component {
   onSubmit(e) {
     e.preventDefault();
     var ele = $(e.target);
-    var email = ele.find("#email").val();
-    var password = ele.find("#password").val();
-    var confirmPassword = ele.find("#confirmPassword").val();
+    var email = ele.find('#email').val();
+    var password = ele.find('#password').val();
+    var confirmPassword = ele.find('#confirmPassword').val();
     console.log(email);
     console.log(password);
     console.log(confirmPassword);
     if (
       password === confirmPassword &&
-      password !== "" &&
-      confirmPassword !== ""
+      password !== '' &&
+      confirmPassword !== ''
     ) {
       var accountInfo = {
         email: email,
@@ -25,7 +25,7 @@ class LoginContainer extends Component {
       //Creating a new user
       Accounts.createUser(accountInfo, function(er) {
         if (er) {
-          alert("error was found!");
+          alert('error was found!');
         } else {
           //redirecting once you login code goes here
           // console.log("success!");

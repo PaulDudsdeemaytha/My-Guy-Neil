@@ -6,7 +6,6 @@ const style = {
     flexDirection: 'column',
     background:
       'center no-repeat url(https://source.unsplash.com/1600x900/?galaxy)',
-    // backgroundRepeat: 'no-repeat',
     height: '100vh',
     width: '100vw'
   },
@@ -31,7 +30,11 @@ const style = {
     textShadow: '2px 2px #C92C30'
   },
 
-  footer: {}
+  footer: {
+    color: 'white',
+    display: 'flex',
+    flexDirection: 'row'
+  }
 };
 
 export default style;
