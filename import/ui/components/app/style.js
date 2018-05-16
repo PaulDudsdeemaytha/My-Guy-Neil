@@ -3,7 +3,12 @@ const style = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    background:
+      'center no-repeat url(https://source.unsplash.com/1600x900/?galaxy)',
+    // backgroundRepeat: 'no-repeat',
+    height: '100vh',
+    width: '100vw'
   },
 
   header: {

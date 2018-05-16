@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import style from "./style";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import style from './style';
 
-import MyGuyNeilBody from "./MyGuyNeilBody";
-import MyGuyNeilFooter from "./MyGuyNeilFooter";
-import MyGuyNeilHeader from "./MyGuyNeilHeader.js";
+import MyGuyNeilBody from './MyGuyNeilBody';
+import MyGuyNeilFooter from './MyGuyNeilFooter';
+import MyGuyNeilHeader from './MyGuyNeilHeader.js';
 
-import Request from "superagent";
+import Request from 'superagent';
 
 class MyGuyNeilHome extends React.Component {
   constructor() {
