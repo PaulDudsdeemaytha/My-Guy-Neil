@@ -1,9 +1,13 @@
 import React, { Component } from "react";
-import { Route, Redirect } from "react-router";
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+  withRouter
+} from "react-router-dom";
 
-// import { renderRoutes } from "../../startup/routes";
-
-class LoginContainer extends Component {
+class Register extends Component {
   onSubmit(e) {
     e.preventDefault();
     var ele = $(e.target);
@@ -25,10 +29,11 @@ class LoginContainer extends Component {
       //Creating a new user
       Accounts.createUser(accountInfo, function(er) {
         if (er) {
-          alert("error was found!");
+          console.log(er);
+          alert(er.reason);
         } else {
           //redirecting once you login code goes here
-          // console.log("success!");
+          console.log("success!");
           return <Redirect to="/" />;
         }
       });
@@ -55,4 +60,4 @@ class LoginContainer extends Component {
   }
 }
 
-export default LoginContainer;
+export default Register;
