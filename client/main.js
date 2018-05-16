@@ -11,7 +11,3 @@ import styles from "./main.css";
 Meteor.startup(() => {
   ReactDOM.render(renderRoutes(), document.getElementById("app"));
 });
-
-// Meteor.startup(() => {
-//   ReactDOM.render(<MyGuyNeil />, document.getElementById('app'));
-// });
