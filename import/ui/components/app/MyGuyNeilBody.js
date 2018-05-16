@@ -8,7 +8,7 @@ class MyGuyNeilBody extends React.Component {
   render() {
     return (
       <div style={style.body}>
-        <Clock format={'HH:mm:ss'} ticking={true} timezone={'US/Pacific'} />
+        <Clock format={'hh:mm:ss'} ticking={true} timezone={'US/Pacific'} />
       </div>
     );
   }
