@@ -3,4 +3,4 @@
 // Meteor.startup(() => {
 //   // code to run on server at startup
 // });
-import "../import/ui/startup/server";
+import "../imports/ui/startup/server";

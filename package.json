@@ -24,8 +24,12 @@
     "react-live-clock": "^2.0.3",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+<<<<<<< HEAD
     "react-weather": "^0.1.3",
     "request": "^2.86.0",
+=======
+    "react-router-redux": "^4.0.8",
+>>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c
     "superagent": "^3.8.3"
   },
   "devDependencies": {

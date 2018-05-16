@@ -5,6 +5,7 @@ import { render } from "react-dom";
 import createBrowserHistory from "history/createBrowserHistory";
 //importing items for routes
 import Login from "../../containers/Login";
+import Register from "../../containers/Login/Register.js";
 import MyGuyNeilHome from "../../components/app/MyGuyNeilHome";
 
 // const browserHistory = createBrowserHistory();
@@ -24,6 +25,13 @@ export const renderRoutes = () => (
     <Switch>
       <Route exact path="/" component={MyGuyNeilHome} />
       <Route path="/Login" component={Login} />
+      <Route path="/Register" component={Register} />
     </Switch>
   </Router>
 );
+
+function isLoggedIn() {
+  if (User.isLoggedIn()) {
+    console.log("is logged in");
+  }
+}
