@@ -23,11 +23,11 @@ class MyGuyNeilFooter extends React.Component {
       <table style={style.footer}>
         <tbody>
           <tr>
-            <td>Latitude</td>
+            <td>Latitude: </td>
             <td>{this.props.coords.latitude}</td>
           </tr>
           <tr>
-            <td>Longitude</td>
+            <td>Longitude: </td>
             <td>{this.props.coords.longitude}</td>
           </tr>
         </tbody>

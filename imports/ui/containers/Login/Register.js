@@ -1,16 +1,5 @@
-<<<<<<< HEAD:import/ui/containers/Login/LoginContainer.js
 import React, { Component } from 'react';
 import { Route, Redirect } from 'react-router';
-=======
-import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect,
-  withRouter
-} from "react-router-dom";
->>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c:imports/ui/containers/Login/Register.js
 
 class Register extends Component {
   onSubmit(e) {
@@ -34,15 +23,10 @@ class Register extends Component {
       //Creating a new user
       Accounts.createUser(accountInfo, function(er) {
         if (er) {
-<<<<<<< HEAD:import/ui/containers/Login/LoginContainer.js
           alert('error was found!');
-=======
-          console.log(er);
-          alert(er.reason);
->>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c:imports/ui/containers/Login/Register.js
         } else {
           //redirecting once you login code goes here
-          console.log("success!");
+          console.log('success!');
           return <Redirect to="/" />;
         }
       });

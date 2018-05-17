@@ -1,19 +1,19 @@
-import React from "react";
-import { Router, Route, Switch } from "react-router";
-import { render } from "react-dom";
+import React from 'react';
+import { Router, Route, Switch } from 'react-router';
+import { render } from 'react-dom';
 
-import createBrowserHistory from "history/createBrowserHistory";
+import createBrowserHistory from 'history/createBrowserHistory';
 //importing items for routes
-import Login from "../../containers/Login";
-import Register from "../../containers/Login/Register.js";
-import MyGuyNeilHome from "../../components/app/MyGuyNeilHome";
+import Login from '../../containers/Login';
+import Register from '../../containers/Login/Register.js';
+import MyGuyNeilHome from '../../components/app/MyGuyNeilHome';
 
 // const browserHistory = createBrowserHistory();
 
 let history;
 
-if (typeof document !== "undefined") {
-  const createBrowserHistory = require("history/createBrowserHistory").default;
+if (typeof document !== 'undefined') {
+  const createBrowserHistory = require('history/createBrowserHistory').default;
 
   history = createBrowserHistory();
 }
@@ -32,6 +32,6 @@ export const renderRoutes = () => (
 
 function isLoggedIn() {
   if (User.isLoggedIn()) {
-    console.log("is logged in");
+    console.log('is logged in');
   }
 }
