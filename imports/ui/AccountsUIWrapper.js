@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import { Template } from "meteor/templating";
-import { Blaze } from "meteor/blaze";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import { Template } from 'meteor/templating';
+import { Blaze } from 'meteor/blaze';
 
-import style from "./components/app/style";
-
-import style from "./components/app/style";
+import style from './components/app/style';
 
 export default class AccountsUIWrapper extends Component {
   componentDidMount() {
