@@ -7,7 +7,7 @@ const style = {
     // // justifyContent: 'center',
     // // flexDirection: 'column',
     background:
-      'center no-repeat url(https://source.unsplash.com/1600x900/?galaxy)',
+      'center no-repeat url(https://source.unsplash.com/2560x1600/?galaxy)',
     height: '100vh',
     width: '100vw',
     padding: '0',
