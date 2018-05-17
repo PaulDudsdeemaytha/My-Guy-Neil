@@ -9,7 +9,6 @@ class MyGuyNeilHeader extends React.Component {
     return (
       <div style={style.header}>
         <h1 style={style.header}>My Guy Neil</h1>
-        {/* <img src="./image/TheManHimself.png" /> */}
         <AccountsUIWrapper />
       </div>
     );
