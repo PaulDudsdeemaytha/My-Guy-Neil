@@ -1,11 +1,7 @@
 /* CSS declarations go here */
 body,
 html {
-<<<<<<< HEAD
   background-color: gray;
-=======
-  background-color: grey;
->>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c
   border: 0;
   margin: 0;
   padding: 0;

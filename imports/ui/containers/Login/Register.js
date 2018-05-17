@@ -1,31 +1,20 @@
-<<<<<<< HEAD:import/ui/containers/Login/LoginContainer.js
-import React, { Component } from 'react';
-import { Route, Redirect } from 'react-router';
-=======
 import React, { Component } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Redirect,
-  withRouter
-} from "react-router-dom";
->>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c:imports/ui/containers/Login/Register.js
+import { Route, Redirect } from "react-router";
 
 class Register extends Component {
   onSubmit(e) {
     e.preventDefault();
     var ele = $(e.target);
-    var email = ele.find('#email').val();
-    var password = ele.find('#password').val();
-    var confirmPassword = ele.find('#confirmPassword').val();
+    var email = ele.find("#email").val();
+    var password = ele.find("#password").val();
+    var confirmPassword = ele.find("#confirmPassword").val();
     console.log(email);
     console.log(password);
     console.log(confirmPassword);
     if (
       password === confirmPassword &&
-      password !== '' &&
-      confirmPassword !== ''
+      password !== "" &&
+      confirmPassword !== ""
     ) {
       var accountInfo = {
         email: email,
@@ -34,12 +23,7 @@ class Register extends Component {
       //Creating a new user
       Accounts.createUser(accountInfo, function(er) {
         if (er) {
-<<<<<<< HEAD:import/ui/containers/Login/LoginContainer.js
-          alert('error was found!');
-=======
-          console.log(er);
-          alert(er.reason);
->>>>>>> c6bb502e3151ab2bcd1ec481d27acde9fd677b7c:imports/ui/containers/Login/Register.js
+          alert("error was found!");
         } else {
           //redirecting once you login code goes here
           console.log("success!");
