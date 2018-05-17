@@ -1,4 +1,4 @@
-import { renderRoutes } from '../../startup/routes';
+import { renderRoutes } from '../../../startup/routes/index.js';
 
 const style = {
   home: {

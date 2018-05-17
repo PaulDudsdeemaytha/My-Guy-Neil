@@ -4,9 +4,10 @@ import { render } from 'react-dom';
 
 import createBrowserHistory from 'history/createBrowserHistory';
 //importing items for routes
-import Login from '../../containers/Login';
-import Register from '../../containers/Login/Register.js';
-import MyGuyNeilHome from '../../components/app/MyGuyNeilHome';
+import Login from '../../ui/containers/Login/index.js';
+import Register from '../../ui/containers/Login/Register.js';
+import App from '../../ui/App.js';
+import MyGuyNeilHome from '../../ui/components/app/MyGuyNeilHome.js';
 
 // const browserHistory = createBrowserHistory();
 
@@ -26,6 +27,7 @@ export const renderRoutes = () => (
       <Route exact path="/" component={MyGuyNeilHome} />
       <Route path="/Login" component={Login} />
       <Route path="/Register" component={Register} />
+      <Route path="/ToDo" component={App} />
     </Switch>
   </Router>
 );
