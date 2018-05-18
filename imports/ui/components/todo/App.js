@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Meteor } from 'meteor/meteor';
-import { withTracker } from 'meteor/react-meteor-data';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { Meteor } from "meteor/meteor";
+import { withTracker } from "meteor/react-meteor-data";
 
-import { Tasks } from '../api/tasks.js';
+import { Tasks } from "../../../api/tasks.js";
 
-import Task from './Task.js';
-import AccountsUIWrapper from './AccountsUIWrapper.js';
+import Task from "./Task.js";
+import AccountsUIWrapper from "../../AccountsUIWrapper.js";
 
 // App component - represents the whole app
 class App extends Component {
@@ -24,10 +24,10 @@ class App extends Component {
     // Find the text field via the React ref
     const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
 
-    Meteor.call('tasks.insert', text);
+    Meteor.call("tasks.insert", text);
 
     // Clear form
-    ReactDOM.findDOMNode(this.refs.textInput).value = '';
+    ReactDOM.findDOMNode(this.refs.textInput).value = "";
   }
 
   toggleHideCompleted() {
@@ -83,7 +83,7 @@ class App extends Component {
               />
             </form>
           ) : (
-            ''
+            ""
           )}
         </header>
 
@@ -94,7 +94,7 @@ class App extends Component {
 }
 
 export default withTracker(() => {
-  Meteor.subscribe('tasks');
+  Meteor.subscribe("tasks");
 
   return {
     tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),

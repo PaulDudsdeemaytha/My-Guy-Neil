@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import style from "./style";
+import App from "../todo/App.js";
 
 import MyGuyNeilBody from "./MyGuyNeilBody";
 import MyGuyNeilFooter from "./MyGuyNeilFooter";
@@ -22,6 +23,7 @@ class MyGuyNeilHome extends React.Component {
         <MyGuyNeilHeader />
         <MyGuyNeilBody />
         <MyGuyNeilFooter />
+        <App />
       </div>
     );
   }

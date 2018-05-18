@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import style from './style';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import style from "./style";
+import App from "../todo/App.js";
 
-import { geolocated } from 'react-geolocated';
+import { geolocated } from "react-geolocated";
 
 class MyGuyNeilFooter extends React.Component {
   //   render() {
