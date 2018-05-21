@@ -63,7 +63,9 @@ ordered-dict@1.1.0
 promise@0.10.2
 random@1.1.0
 rate-limit@1.0.9
+react@15.0.2
 react-meteor-data@0.2.16
+react-runtime@15.0.2
 reactive-dict@1.2.0
 reactive-var@1.0.11
 reload@1.2.0
